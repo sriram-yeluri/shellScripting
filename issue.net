@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# To display Welcome or Warning message for SSH users before login. 
+# We use issue.net file to display a banner massages
+# Location : /etc/issue.net
+#
+
+# Follow the steps mentioned below
+vi /etc/ssh/sshd_config
+Uncomment below line : 
+#Banner /some/path
+Banner /etc/issue.net (you can use any path you want)
+# /etc/init.d/sshd restart
