@@ -9,7 +9,11 @@ Repository created for shell scripts
 * First character should be a letter or an underscore
 * Variable names are case sensitive
 * Good Habit : user lowercase for variables
-* Use double quotes for variable substitutions. ex "${HOME}"
+* Good Habit : Surround variables with quotes. Ex. "${HOME}"
+* Good Habit: use braces {}. Ex: echo "{foo}bar" instead of echo "foobar"
+* There is no need to use escape slash \ while using double quotes. 
+* use ${HOME} instead of tilda ~
+
 
 ## To see all builtin commands of bash
 man builtin
