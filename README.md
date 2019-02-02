@@ -1,8 +1,6 @@
 # shellScripting
-<<<<<<< HEAD
+
 Repository created for knowledge on shell scripts
-=======
-Repository created for shell scripts
 
 ## TIPS
 * Don't use white space around =
@@ -80,4 +78,3 @@ help test
 
 ## To get length of the string in a variable
 ${#var}
->>>>>>> 206ccdef57e8b49f3e8a7f7c423a094f7f265c29
