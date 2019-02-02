@@ -1,2 +1,2 @@
 # shellScripting
-Repository created for shell scripts
+Repository created for knowledge on shell scripts

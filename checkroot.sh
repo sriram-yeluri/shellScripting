@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 if [ `whoami` != 'root' ]; then
     echo "Executing the installer script"
 else
