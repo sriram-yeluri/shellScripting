@@ -26,6 +26,10 @@ use -x option in the hashbang to debug a script.
 Note: Adding -x at hashbang will print debug messages for entire script. So to avoid debugging entire script and to debug only selected lines of a script , use "set -x" to enable and "set +x" to disable debugging for selected lines. 
 
 ## Conditional Expressions
+```
+# to get help on all conditional expressions, user below command
+help test
+```
 
 |Expression  | True if                          |
 |------------|----------------------------------|
@@ -56,3 +60,20 @@ Note: Adding -x at hashbang will print debug messages for entire script. So to a
 | -v $variable | the shell variable varname is set (has been assigned a value).   |
 | -z string | the length of string is zero. |
 | -n string | the length of string is non-zero. |
+
+
+## Special Variables
+
+| Special Variables | Description                                     |
+|----|----------------------------------------------------------------|
+| $0 | returns name of the script                                     |
+| $# | returns total number of arguments                              |
+| $@ | returns list of arguments                                      |
+| $* | If a script receives two arguments, $* is equivalent to $1 $2. |
+| $? | returns exit value of the last executed command                |
+| $! | returns process number of the last background command          |
+| $$ | returns PID of current shell                                   |
+| !$ | Last argument in a command                                     |
+
+## To get length of the string in a variable
+${#var}
