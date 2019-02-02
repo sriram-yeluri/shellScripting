@@ -9,6 +9,10 @@ Repository created for shell scripts
 * First character should be a letter or an underscore
 * Variable names are case sensitive
 * Good Habit : user lowercase for variables
+* Use double quotes for variable substitutions. ex "${HOME}"
+
+## To see all builtin commands of bash
+man builtin
 
 
 
