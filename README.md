@@ -27,8 +27,32 @@ Note: Adding -x at hashbang will print debug messages for entire script. So to a
 
 ## Conditional Expressions
 
-|Expression | True if                     |
-|---------|-------------------------------|
+|Expression  | True if                          |
+|------------|----------------------------------|
 | [[ $str ]] | string is not empty |
 | [[ $str = "test" ]] | string is equal |
-| [[ $str="ẗest" ]] | always return true |
+| [[ $str="ẗest" ]] | always return true, becs there is no space around = |
+| -a file | file exists. |
+| -b file | file exists and is a block special file. |
+| -c file | file exists and is a character special file. |
+| -d file | file exists and is a directory.  |
+| -e file | file exists. |
+| -f file | file exists and is a regular file.  |
+| -g file | file exists and is set-group-id. |
+| -h file | file exists and is a symbolic link.|
+| -k file | file exists and its sticky bit is set.  |
+| -p file | file exists and is a named pipe (FIFO).  |
+| -r file | file exists and is readable.  |
+| -s file | file exists and has a size greater than zero.  |
+| -t fd   | file descriptor fd is open and refers to a terminal.  |
+| -u file | file exists and its set-user-id bit is set. |
+| -w file | file exists and is writable. |
+| -x file | file exists and is executable.  |
+| -G file | file exists and is owned by the effective group id.  |
+| -L file | file exists and is a symbolic link. |
+| -N file | file exists and has been modified since it was last read. |
+| -O file | file exists and is owned by the effective user id. |
+| -S file | file exists and is a socket.  |
+| -v varname | the shell variable varname is set (has been assigned a value).   |
+| -z string | the length of string is zero. |
+| -n string | the length of string is non-zero. |
