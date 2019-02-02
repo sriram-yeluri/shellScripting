@@ -25,4 +25,10 @@ use -x option in the hashbang to debug a script.
 ```
 Note: Adding -x at hashbang will print debug messages for entire script. So to avoid debugging entire script and to debug only selected lines of a script , use "set -x" to enable and "set +x" to disable debugging for selected lines. 
 
+## Conditional Expressions
 
+|Expression | True if                     |
+|---------|-------------------------------|
+| [[ $str ]] | string is not empty |
+| [[ $str = "test" ]] | string is equal |
+| [[ $str="ẗest" ]] | always return true |
