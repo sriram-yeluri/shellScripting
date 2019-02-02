@@ -18,5 +18,8 @@ Repository created for shell scripts
 ## To see all builtin commands of bash
 man builtin
 
-
+## How to debug shell script
+use -x option in the shebang to debug a script.
+ex: #!/bin/bash -x
+Note: Adding -x at shebang will print debug messages for entire script. So to avoid debugging entire script and to debug only selected lines of a script , use set -x and set +x 
 
