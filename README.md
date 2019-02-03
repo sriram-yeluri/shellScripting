@@ -36,7 +36,7 @@ help test
 |------------|----------------------------------|
 | [[ $str ]] | string is not empty |
 | [[ $str = "test" ]] | string is equal |
-| [[ $str="ẗest" ]] | always return true, becs there is no space around = |
+| [[ $str="test" ]] | always return true, becs there is no space around = |
 | -a $filename | file exists. |
 | -b $filename | file exists and is a block special file. |
 | -c $filename | file exists and is a character special file. |
